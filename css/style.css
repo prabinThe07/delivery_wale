@@ -1,0 +1,109 @@
+body {
+    background-color: #f0f7ff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .user-type-option {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-type-option:hover {
+    border-color: #4dabf7;
+    transform: translateY(-2px);
+  }
+  
+  .user-type-option.selected {
+    border-color: #4dabf7;
+    background-color: #f1f9ff;
+    position: relative;
+  }
+  
+  .user-type-option.selected::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    background-color: #4dabf7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .user-type-option.selected::before {
+    content: "✓";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: #e9f5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .icon-container i {
+    font-size: 20px;
+    color: #4dabf7;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #4dabf7;
+    border-color: #4dabf7;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #3c99e6;
+    border-color: #3c99e6;
+  }
+  
+  .form-control:focus {
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 0.25rem rgba(77, 171, 247, 0.25);
+  }
+  
+  #username-check {
+    color: #28a745;
+  }
+  
